@@ -1,8 +1,9 @@
-export function HomePage() {
+import "./Home.css";
+
+export default function HomePage() {
   return (
     <>
-      <p>Test: You should start working here!</p>
+      <p className="red">Test: You should start working here!</p>
     </>
-);
-
+  );
 }
