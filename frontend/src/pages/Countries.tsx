@@ -32,6 +32,10 @@ export default function Countries() {
           </div>
         ))}
       </section>
+
+      <Link to={"/createCountry"}>
+        <button>Add a country</button>
+      </Link>
     </>
   )
 }

@@ -4,6 +4,7 @@ import HomePage from "./pages/Home";
 import Continents from "./pages/Continents";
 import Countries from "./pages/Countries";
 import CountryDetails from "./pages/CountryDetails";
+import CreateCountryForm from "./pages/CreateCountryForm";
 import { PageLayout } from "./components/Layout";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/continents" Component={Continents} />
             <Route path="/countries" Component={Countries} />
             <Route path="/countries/:code" Component={CountryDetails} />
+            <Route path="/createCountry" Component={CreateCountryForm} />
             {/* <Route path="*" Component={() => <Navigate to="/" />} /> */}
           </Route>
         </Routes>
