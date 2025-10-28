@@ -1,3 +1,8 @@
 export function HomePage() {
-  return <p>You should start working here!</p>;
+  return (
+    <>
+      <p>Test: You should start working here!</p>
+    </>
+);
+
 }
