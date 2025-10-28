@@ -35,6 +35,18 @@ query Country($code: String!) {
 }
 `;
 
+export const CREATE_A_COUNTRY = gql `
+mutation addCountry ($data: NewCountryInput!) {
+  addCountry(data: $data) {
+    name
+    code
+    emoji
+    continent {
+      id
+    }
+  }
+}
+`;
 
 
 /* 
